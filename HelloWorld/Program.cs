@@ -33,9 +33,15 @@
 // Console.WriteLine(x % y);
 string firstName = "Юрий";
 string lastName = "Васильев";
-string firstName = "ИСП-241";
+string group = "ИСП-241";
 int birthYear = 2008;
 double gpa = 4.5;
 bool hasScholarship = true;
 int currentYear = 2026;
 int age = currentYear - birthYear;
+Console.WriteLine("Студенческое удостоверение");
+Console.WriteLine($"Имя: {firstName} {lastName}");
+Console.WriteLine($"Группа: {group}");
+Console.WriteLine($"Возраст: {age} лет.");
+Console.WriteLine($"Средний балл: {gpa}");
+Console.WriteLine($"Степендия: {hasScholarship}");
