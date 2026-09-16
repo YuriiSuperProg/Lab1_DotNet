@@ -45,34 +45,70 @@
 // Console.WriteLine($"Возраст: {age} лет.");
 // Console.WriteLine($"Средний балл: {gpa}");
 // Console.WriteLine($"Степендия: {hasScholarship}");
-int a = 15;
-int b = 4;
-Console.WriteLine($"Сумма: {a + b}");
-Console.WriteLine($"Разность: {a - b}");
-Console.WriteLine($"Произведение: {a * b}");
-Console.WriteLine($"Частное (int): {a / b}");
-Console.WriteLine($"Остаток: {a % b}");
-double result = (double)a / b;
-Console.WriteLine($"Частное (double): {result}");
-Console.WriteLine(Math.Abs(-5));
-Console.WriteLine(Math.Pow(2,10));
-Console.WriteLine(Math.Sqrt(144));
-Console.WriteLine(Math.Max(10,25));
-Console.WriteLine(Math.Min(10,25));
-Console.WriteLine(Math.Round(3.567,2));
-Console.WriteLine("Калькулятор");
-Console.WriteLine("Введите первое число: ");
-double num1 = double.Parse(Console.ReadLine());
-Console.WriteLine("Введите второе число: ");
-double num2 = double.Parse(Console.ReadLine());
-Console.WriteLine($"Сумма: {num1 + num2}");
-Console.WriteLine($"Разность: {num1 - num2}");
-Console.WriteLine($"Произведение: {num1 * num2}");
-if (num2 != 0)
+// int a = 15;
+// int b = 4;
+// Console.WriteLine($"Сумма: {a + b}");
+// Console.WriteLine($"Разность: {a - b}");
+// Console.WriteLine($"Произведение: {a * b}");
+// Console.WriteLine($"Частное (int): {a / b}");
+// Console.WriteLine($"Остаток: {a % b}");
+// double result = (double)a / b;
+// Console.WriteLine($"Частное (double): {result}");
+// Console.WriteLine(Math.Abs(-5));
+// Console.WriteLine(Math.Pow(2,10));
+// Console.WriteLine(Math.Sqrt(144));
+// Console.WriteLine(Math.Max(10,25));
+// Console.WriteLine(Math.Min(10,25));
+// Console.WriteLine(Math.Round(3.567,2));
+// Console.WriteLine("Калькулятор");
+// Console.WriteLine("Введите первое число: ");
+// double num1 = double.Parse(Console.ReadLine());
+// Console.WriteLine("Введите второе число: ");
+// double num2 = double.Parse(Console.ReadLine());
+// Console.WriteLine($"Сумма: {num1 + num2}");
+// Console.WriteLine($"Разность: {num1 - num2}");
+// Console.WriteLine($"Произведение: {num1 * num2}");
+// if (num2 != 0)
+// {
+//     Console.WriteLine($"Частное (int): {num1 / num2}");
+// } 
+// else
+// {
+//     Console.WriteLine("Деление на ноль невозможно!");
+// }
+// Console.WriteLine(int.MaxValue);
+// Console.WriteLine(int.MinValue);
+// Console.WriteLine(double.MaxValue);
+// Console.WriteLine(double.MaxValue);
+Console.WriteLine("Добро пожаловать в анкету!");
+Console.Write("Введите ваше имя: ");
+string name = Console.ReadLine();
+Console.Write("Введите вашу фамилию: ");
+string surname = Console.ReadLine();
+Console.Write("Введите вашу группу: ");
+string group = Console.ReadLine();
+Console.Write("Введите ваш год рождения: ");
+int birthYear = int.Parse(Console.ReadLine());
+Console.Write("Введите ваш средний балл (например, 4.5): ");
+double gpa = double.Parse(Console.ReadLine());
+int currentYear = 2026;
+int age = currentYear - birthYear;
+bool isExcellent = gpa >= 4.5;
+string status;
+if (isExcellent == true)
 {
-    Console.WriteLine($"Частное (int): {num1 / num2}");
-} 
+    status = "Отличник";
+}
 else
 {
-    Console.WriteLine("Деление на ноль невозможно!");
+    status = "Хорошист";
 }
+Console.WriteLine("Ваша анкета");
+Console.WriteLine($"Имя:            {name} {surname}");
+Console.WriteLine($"Группа:         {group}");
+Console.WriteLine($"Возраст:        {age} лет");
+Console.WriteLine($"Средний балл:   {gpa}");
+Console.WriteLine($"Статус: {status}");
+Console.WriteLine($"Лет до 30: {30 - age}");
+Console.WriteLine($"Нажмите enter для выхода...");
+Console.ReadLine();
