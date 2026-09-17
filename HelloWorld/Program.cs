@@ -80,35 +80,87 @@
 // Console.WriteLine(int.MinValue);
 // Console.WriteLine(double.MaxValue);
 // Console.WriteLine(double.MaxValue);
-Console.WriteLine("Добро пожаловать в анкету!");
-Console.Write("Введите ваше имя: ");
-string name = Console.ReadLine();
-Console.Write("Введите вашу фамилию: ");
-string surname = Console.ReadLine();
-Console.Write("Введите вашу группу: ");
-string group = Console.ReadLine();
-Console.Write("Введите ваш год рождения: ");
-int birthYear = int.Parse(Console.ReadLine());
-Console.Write("Введите ваш средний балл (например, 4.5): ");
-double gpa = double.Parse(Console.ReadLine());
-int currentYear = 2026;
-int age = currentYear - birthYear;
-bool isExcellent = gpa >= 4.5;
-string status;
-if (isExcellent == true)
-{
-    status = "Отличник";
-}
-else
-{
-    status = "Хорошист";
-}
-Console.WriteLine("Ваша анкета");
-Console.WriteLine($"Имя:            {name} {surname}");
-Console.WriteLine($"Группа:         {group}");
-Console.WriteLine($"Возраст:        {age} лет");
-Console.WriteLine($"Средний балл:   {gpa}");
-Console.WriteLine($"Статус: {status}");
-Console.WriteLine($"Лет до 30: {30 - age}");
-Console.WriteLine($"Нажмите enter для выхода...");
-Console.ReadLine();
+// Console.WriteLine("Добро пожаловать в анкету!");
+// Console.Write("Введите ваше имя: ");
+// string name = Console.ReadLine();
+// Console.Write("Введите вашу фамилию: ");
+// string surname = Console.ReadLine();
+// Console.Write("Введите вашу группу: ");
+// string group = Console.ReadLine();
+// Console.Write("Введите ваш год рождения: ");
+// int birthYear = int.Parse(Console.ReadLine());
+// Console.Write("Введите ваш средний балл (например, 4.5): ");
+// double gpa = double.Parse(Console.ReadLine());
+// int currentYear = 2026;
+// int age = currentYear - birthYear;
+// bool isExcellent = gpa >= 4.5;
+// string status;
+// if (isExcellent == true)
+// {
+//     status = "Отличник";
+// }
+// else
+// {
+//     status = "Хорошист";
+// }
+// Console.WriteLine("Ваша анкета");
+// Console.WriteLine($"Имя:            {name} {surname}");
+// Console.WriteLine($"Группа:         {group}");
+// Console.WriteLine($"Возраст:        {age} лет");
+// Console.WriteLine($"Средний балл:   {gpa}");
+// Console.WriteLine($"Статус: {status}");
+// Console.WriteLine($"Лет до 30: {30 - age}");
+// Console.WriteLine($"Нажмите enter для выхода...");
+// Console.ReadLine();
+
+/* Задание 1. Переменные */
+
+// string kino = "Человек паук";
+// int num = 23;
+// double pi = 3.14;
+// char letter = 'Ю';
+// Console.WriteLine(kino);
+// Console.WriteLine(num);
+// Console.WriteLine(pi);
+// Console.WriteLine(letter);
+
+/* Задание 2. Напишите программу, которая выводит на 4 строчках I need more power! */
+
+// for (int i = 0; i < 4; i++)
+// {
+//     Console.WriteLine("I need more power!");
+// }
+
+/* Задание 3. Управляющая последовательность */
+
+// Console.WriteLine("\"Hello there\"");
+
+/* Задание 4. Стоимость покупки PC */
+
+// Console.Write("Введите стоимость монитора: ");
+// double monitor = double.Parse(Console.ReadLine());
+// Console.Write("Введите стоимость Системного блока: ");
+// double PC = double.Parse(Console.ReadLine());
+// Console.Write("Введите стоимость клавиатуры: ");
+// double keyboard = double.Parse(Console.ReadLine());
+// Console.Write("Введите стоимость мыши: ");
+// double mouse = double.Parse(Console.ReadLine());
+// double res = monitor + PC + keyboard + mouse;
+// Console.WriteLine($"Стоимость вашего компьютера: {res}");
+
+/* Задание 5. Значение функции */
+
+// Console.Write("Введите число a: ");
+// int a = int.Parse(Console.ReadLine());
+// Console.Write("Введите число b: ");
+// int b = int.Parse(Console.ReadLine());
+// double res = 3 * (a + b) + 275 * Math.Pow(b, 2) - 127 * a - 41;
+// Console.WriteLine($"Значение функции: {res}");
+
+/* Задание 6. Конвертер температуры */
+
+Console.Write("Введите температуру в °C: ");
+double temp = double.Parse(Console.ReadLine());
+double res = ((temp * 9) / 5) + 32;
+Console.WriteLine($"Температура в ℉: {res}");
+ 
